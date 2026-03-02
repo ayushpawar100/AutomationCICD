@@ -17,7 +17,7 @@ public class ErrorValidationTest extends BaseTest {
 	public void loginErrorValidation() throws IOException {
 		// TODO Auto-generated method stub
 		landingPage.loginApplication("kunalrana@gmail.com", "Kunal123");
-		Assert.assertEquals("Incorrect email  password.", landingPage.getErrorMessage());
+		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
 	}
 
 	@Test
